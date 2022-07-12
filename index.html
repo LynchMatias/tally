@@ -1,0 +1,152 @@
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" charset="utf-8"/>
+<style>
+
+body{
+	   position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.wrapper {
+  padding: 10px;
+  box-sizing: border-box;
+  resize: horizontal;
+  border: 1px dashed;
+  overflow: auto;
+  max-width: 100%;
+  height: calc(100vh - 16px);
+}
+
+.container {
+  height: 1500px;
+  position: relative;
+}
+
+.vertical-center {
+  margin: 0;
+  position: relative;
+  top: 100%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.center{
+	margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.left{
+	float: left;
+	padding: 10px;
+	
+}
+
+.right{
+	float: right;
+	padding: 15px;
+	
+}
+
+.columna{
+	display: flex;
+	flex-direction: column;
+}
+
+.fila{
+	display: flex;
+	flex-direction: row;
+}
+
+a.button{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
+button{
+	height: 100px;
+	font-size: 1.2rem;
+	border-width: 3px;
+}
+
+input{
+	height: 100px;
+	font-size: 1.2rem;
+	border-width: 3px;
+}
+
+input[type=radio] {
+		display:none;
+	}
+
+	input[type=radio] + label {
+		height: 100px;
+		font-size: 1.2rem;
+		border-width: 3px;
+		display:inline-block;
+		margin:-2px;
+		padding: 4px 12px;
+		margin-bottom: 0;
+		line-height: 20px;
+		color: #333;
+		text-align: center;
+		text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+		vertical-align: middle;
+		cursor: pointer;
+		background-color: #f5f5f5;
+		background-image: -moz-linear-gradient(top,#fff,#e6e6e6);
+		background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#e6e6e6));
+		background-image: -webkit-linear-gradient(top,#fff,#e6e6e6);
+		background-image: -o-linear-gradient(top,#fff,#e6e6e6);
+		background-image: linear-gradient(to bottom,#fff,#e6e6e6);
+		background-repeat: repeat-x;
+		border: 1px solid #ccc;
+		border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+		border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+		border-bottom-color: #b3b3b3;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#ffe6e6e6',GradientType=0);
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+		-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	}
+
+	input[type=radio]:checked + label {
+		   background-image: none;
+		outline: 0;
+		-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+		-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+		box-shadow: inset 0 2px 4px rgba(0,0,0,0.15),0 1px 2px rgba(0,0,0,0.05);
+			background-color:#e0e0e0;
+	}
+
+div + p {
+     color: red;
+}
+
+</style>
+</head>
+<body>
+	<h1>Elegir Numero de Cámara</h1>
+		<div class="left">
+			<div class = "columna">				
+				<a href="cam1.html">Camara 1</a>
+				<a href="cam2.html">Camara 2</a>
+				<a href="cam3.html">Camara 3</a>
+				<a href="cam4.html">Camara 4</a>
+			</div>
+		</div>
+
+</script>
+
+</body>
+</html>
