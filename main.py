@@ -9,12 +9,12 @@ def on_press(tecla):
         key = int(tecla.char)
         cam = "cam{}pgr".format(key)
         datos = {}
-        base.put("camaras/"+IDGRUPO, cam, 1)
         for i in range(1, 5):
             if i != key:
                 camara = "cam{}pgr".format(i)
                 base.put("camaras/"+IDGRUPO, camara, 0)
-        #print(base.post("camaras/", datos))   
+        #print(base.post("camaras/", datos))  
+        base.put("camaras/"+IDGRUPO, cam, 1) 
     except:
         return
 
