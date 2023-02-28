@@ -50,19 +50,13 @@ span {
       document.body.style.backgroundColor = "red";
       document.getElementById("cam1").style = " color:black";
       document.getElementById("cam1").innerHTML = "ON AIR";
-      break;
     }
-    else{
-      document.body.style.backgroundColor = "black"
-      document.getElementById("cam1").style = " color:white";
-      document.getElementById("cam1").innerHTML = "OFF"
-    }
-    if(snapshot.val()["cam1pvw"] == 1){
-      document.body.style.backgroundColor = "lime"
+    else if(snapshot.val()["cam1pvw"] == 1){
+      document.body.style.backgroundColor = "lime";
       document.getElementById("cam1").style = " color:black";
-      document.getElementById("cam1").innerHTML = "EN PVW"
-      break;
-    }else{
+      document.getElementById("cam1").innerHTML = "EN PVW";
+    }
+    else {
       document.body.style.backgroundColor = "black"
       document.getElementById("cam1").style = " color:white";
       document.getElementById("cam1").innerHTML = "OFF"
