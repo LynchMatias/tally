@@ -12,7 +12,7 @@ span {
 	<div>
 	 <span  id="cam1"><span>
 	 </div>
-   <!--iframe width="420" height="315" src="https://studio.grabyo.com/ce38e519-91d3-4e11-b7b9-8870694c7146""></iframe-->
+   <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
 <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
@@ -50,15 +50,22 @@ span {
   	if(snapshot.val()["cam1pgr"] == 1){
   		document.body.style.backgroundColor = "red"
   		document.getElementById("cam1").style = " color:black";
-  		document.getElementById("cam1").innerHTML = "ON";
-      console.log("on");
-      //alert("ON");
+  		document.getElementById("cam1").innerHTML = "ON AIR";
   	}
   	else{
   		document.body.style.backgroundColor = "black"
   		document.getElementById("cam1").style = " color:white";
   		document.getElementById("cam1").innerHTML = "OFF"
   	}
+    if(snapshot.val()["cam1pvw"] == 1){
+      document.body.style.backgroundColor = "lime"
+      document.getElementById("cam1").style = " color:black";
+      document.getElementById("cam1").innerHTML = "EN PVW"
+    }else{
+      document.body.style.backgroundColor = "black"
+      document.getElementById("cam1").style = " color:white";
+      document.getElementById("cam1").innerHTML = "OFF"
+    }
   	// document.getElementById("asd").innerHTML = snapshot.val()["cam1pgr"];
   });
 </script>
