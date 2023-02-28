@@ -44,6 +44,15 @@ span {
   const id = "-N6VHCoYZwjgMKmS7Ap8"
   const color = ref(db, 'camaras/' + id);
   onValue(color, (snapshot) => {
+    if(snapshot.val()["cam2pvw"] == 1){
+      document.body.style.backgroundColor = "lime"
+      document.getElementById("cam1").style = " color:black";
+      document.getElementById("cam1").innerHTML = "EN PVW"
+    }else{
+      document.body.style.backgroundColor = "black"
+      document.getElementById("cam1").style = " color:white";
+      document.getElementById("cam1").innerHTML = "OFF"
+    }
   	if(snapshot.val()["cam2pgr"] == 1){
       document.body.style.backgroundColor = "red"
       document.getElementById("cam1").style = " color:black";
@@ -54,15 +63,7 @@ span {
       document.getElementById("cam1").style = " color:white";
       document.getElementById("cam1").innerHTML = "OFF"
     }
-    if(snapshot.val()["cam2pvw"] == 1){
-      document.body.style.backgroundColor = "lime"
-      document.getElementById("cam1").style = " color:black";
-      document.getElementById("cam1").innerHTML = "EN PVW"
-    }else{
-      document.body.style.backgroundColor = "black"
-      document.getElementById("cam1").style = " color:white";
-      document.getElementById("cam1").innerHTML = "OFF"
-    }
+    
   	// document.getElementById("asd").innerHTML = snapshot.val()["cam1pgr"];
   });
 
